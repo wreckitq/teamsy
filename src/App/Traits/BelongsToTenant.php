@@ -2,8 +2,8 @@
 
 namespace App\Traits;
 
+use App\Scopes\TenantScope;
 use Domain\Tenant\Models\Tenant;
-use Domain\Tenant\Scopes\TenantScope;
 
 trait BelongsToTenant
 {

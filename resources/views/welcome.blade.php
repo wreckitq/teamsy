@@ -36,8 +36,14 @@
                     </a>
 
                     <h1 class="text-5xl font-extrabold tracking-wider text-center text-gray-600">
-                        {{ config('app.name') }}
+                        {{ auth()->user()->tenant_name ?? config('app.name') }}
                     </h1>
+
+                    @auth
+                        <h3 class="text-5xl font-extrabold tracking-wider text-center text-gray-600">
+                            Member: {{ App\Models\User::all()->count() }}
+                        </h3>
+                    @endauth
 
                     <ul class="list-reset">
                         <li class="inline px-4">

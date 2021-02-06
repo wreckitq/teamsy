@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.tall')
 
 @section('content')
     <div class="flex flex-col justify-center min-h-screen py-12 bg-gray-50 sm:px-6 lg:px-8">
@@ -45,7 +45,7 @@
                         </h3>
                     @endauth
 
-                    <ul class="list-reset">
+                    <ul class="list-reset text-center">
                         <li class="inline px-4">
                             <a href="https://tailwindcss.com" class="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">Tailwind CSS</a>
                         </li>
